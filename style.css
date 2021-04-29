@@ -1,0 +1,103 @@
+.fond
+{
+    background-color: #F5F6F7;
+body{width:90%;margin:auto;min-width:600px;max-width:2000px}
+
+}
+.entete
+{
+    font-size: 50px;
+    font-family: Likhan;
+    padding: 0.1em;
+    text-indent: 1em;
+    color: chocolate;
+}
+.photo
+{  margin-left: 100px;
+    top: 10px;
+    left: 50px;
+}
+
+.button
+{
+    margin-left: 800px;
+}
+
+.connexion
+{
+    margin: 100px;
+}
+.cg{
+    margin-top: 10px
+}
+.pied
+{
+    top: 50pxS;
+    text-align: center;
+    font-size: 25px;
+
+}
+.navbar
+{
+    background-color: #21081a;
+}
+.recherche
+{
+
+}
+.d-flex
+{
+    background-color: #F5F6F7;
+    position: relative;
+    left: 1500px;
+    margin: 1px;
+}
+.rightside, .leftside
+{
+
+}
+.rightside
+{
+    position: relative;
+    top: 70px;
+    left: 100px;
+}
+.leftside
+{
+    position: relative;
+    top: 20px;
+    left: 100px;
+}
+
+.test1
+{
+    font-size:30px;
+    text-align: center;
+    font-family: Gubbi;
+    color: darkred;
+}
+.test2
+{
+    text-align: center;
+    font-family: Gubbi;
+    font-size: 60px;
+    margin: 1%;
+    color: darkred ;
+}
+.test3
+{
+    text-align: center;
+}
+.label
+{  font-family: Likhan;
+    font-size: 30px;
+    color: black;
+}
+.table
+{
+    width: 600px;
+}
+.test4
+{
+    background: coral ;
+}l;
