@@ -26,6 +26,8 @@
 }
 
 .next-btn-wrapper a {
+    width: 100px;
+    display: inline-block;
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -33,7 +35,6 @@
     background-color: rgb(155, 110, 255);
     padding: 9px;
 }
-
 .next-btn-wrapper a:hover {
     background-color: rgb(94, 23, 248);
     transition: 500ms;

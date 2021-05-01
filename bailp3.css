@@ -36,6 +36,8 @@
 }
 
 .next-btn-wrapper a {
+    width: 100px;
+    display: inline-block;
     text-decoration: none;
     color: white;
     font-size: 20px;

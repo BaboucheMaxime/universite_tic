@@ -17,51 +17,35 @@
     margin: 10px 10px 10px ;
 }
 
-div[class*='lessor-labels-wrapper'] {
-    margin: auto;
-    width: 95%;
-}
-
-div[class*='lessor-labels-wrapper'] div {
+.twocols-sm label, .twocols-sm input, .twocols-md label, .twocols-md input {
     display: inline-block;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
-.label-wrapper {
-    min-width: 100px;
+.twocols-sm label {
+    width: 25%;
+}
+
+.twocols-sm input {
+    width: 225px;
+}
+
+.twocols-md label {
+    width: 40%;
+}
+
+.twocols-md input {
     width: 100px;
-    max-width: 100px;
 }
 
-.input-wrapper {
-    min-width: 200px;
-    width: 200px;
-    max-width: 200px;
+.titlegap {
+    margin-bottom: 10px;
 }
 
-.input-wrapper-adress {
-    min-width: 300px;
-    width: 35%;
-    max-width: 50%;
-}
-
-.input-wrapper-adress input {
-    min-width: 300px;
-    width: 300px;
-    max-width: 300px;
-}
-
-.input-wrapper-city {
-    min-width: 300px;
-    width: 300px;
-    max-width: 300px;
-}
-
-.input-wrapper-city input {
-    min-width: 300px;
-    width: 300px;
-    max-width: 300px;
+.blankspacegap, .secblankspacegap {
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .next-btn-wrapper {
@@ -73,6 +57,8 @@ div[class*='lessor-labels-wrapper'] div {
 }
 
 .next-btn-wrapper a {
+    width: 100px;
+    display: inline-block;
     text-decoration: none;
     color: white;
     font-size: 20px;
