@@ -17,8 +17,20 @@
     margin: 10px 10px 10px ;
 }
 
-.lessor-labels-wrapper input {
-    width: 6rem;
+.twocols-lg label, .twocols-lg input, .twocols-md label, .twocols-md input {
+    display: inline-block;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.twocols-md label {
+    width: 50%;
+}
+
+
+.spacebetween {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .next-btn-wrapper {
