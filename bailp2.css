@@ -23,27 +23,34 @@
     margin-bottom: 1px;
 }
 
+textarea {
+    width: 100%;
+    max-width: 630px;
+}
+
 .twocols-sm label {
-    width: 25%;
+    min-width: 200px;
+    width: 15%;
 }
 
 .twocols-sm input {
-    width: 225px;
+    width: 100%;
+    max-width: 425px;
+
 }
 
 .twocols-md label {
-    width: 40%;
+    min-width: 200px;
+    width: 15%;
 }
 
 .twocols-md input {
-    width: 100px;
+    width: 100%;
+    max-width: 222px;
+
 }
 
-.titlegap {
-    margin-bottom: 10px;
-}
-
-.blankspacegap, .secblankspacegap {
+.spacebetween {
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -70,4 +77,34 @@
 .next-btn-wrapper a:hover {
     background-color: rgb(94, 23, 248);
     transition: 500ms;
+}
+
+@media only screen and (max-width: 400px) {
+    textarea {
+        width: 100%;
+    }
+
+    .twocols-md label, .twocols-md input, .twocols-md select {
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+    
+    .twocols-sm label {
+        width: 25%;
+    }
+    
+    .twocols-sm input {
+        width: 225px;
+    }
+    
+    .twocols-md label {
+        width: 20%;
+    }
+    
+    .twocols-md input {
+        width: 100px;
+    }
+    .twocols-md select {
+        width: 100px;
+    }
 }

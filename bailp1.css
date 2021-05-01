@@ -48,7 +48,7 @@ input {
     margin-bottom: 10px;
 }
 
-.blankspacegap, .secblankspacegap {
+.spacebetween {
     margin-bottom: 10px;
     margin-top: 10px;
 }

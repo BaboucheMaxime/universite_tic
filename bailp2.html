@@ -10,7 +10,8 @@
         <div class="agreement">
             <h2>II. Objet du contrat</h2>
             Le présent contrat a pour objet la location d'un logement ainsi déterminé :
-            <h3>A. Consistance du logement</h3>
+            <div class="spacebetween"><h3>A. Consistance du logement</h3></div>
+            
             <form action="">
                     <div class="twocols-sm">
                         <label for="street">Rue</label>
@@ -29,8 +30,10 @@
                         <label for="surface">Surface</label>
                         <input type="text" id="surface" name="surface"><br>
                         <label for="furnished">Meublé</label>
-                        <input type="checkbox" id="furnished" name="furnished"><br>
-
+                        <select name="furnished">
+                            <option value="yes"> Oui</option>
+                            <option value="no"> Non</option>
+                        </select><br>
                     </div>
                     <div class="twocols-md">
                         <label>Régime juridique de l'immeuble</label>
@@ -50,19 +53,19 @@
                         <input type="number" id="rooms" name="rooms"><br>
                     </div>
                         <label for="extra">Autres parties du logement :</label><br>
-                        <textarea id="extra" name="extra" rows="4" cols="40"></textarea><br>
+                        <textarea id="extra" name="extra" rows="4"></textarea><br>
                         <label for="stuff">Éléments d'équipement du logement :</label><br>
-                        <textarea id="stuff" name="stuff" rows="4" cols="40"></textarea><br>
+                        <textarea id="stuff" name="stuff" rows="4"></textarea><br>
 
-            <h3>B. Destination des locaux :</h3>
-
+            
+            <div class="spacebetween"><h3>B. Destination des locaux :</h3></div>
                     <input type="checkbox" id="onlyliving" name="onlyliving" value="usage d'habitation">
                     <label for="onlyliving"> usage d’habitation</label><br>
                     <input type="checkbox" id="mix" name="mix" value="usage mixte professionnel et d’habitation">
                     <label for="mix"> usage mixte professionnel et d’habitation</label><br>
-
-            <h3>C. Énumération des locaux, parties, équipements et accessoires de l’immeuble à usage
-                commun :</h3> 
+            <div class="spacebetween"><h3>C. Énumération des locaux, parties, équipements et accessoires de l’immeuble à usage
+                commun :</h3></div>
+            
                         <input type="checkbox" id="bikesgarage" name="bikesgarage" value="garage a velo">
                         <label for="bikesgarage"> garage à vélo</label>
                         <input type="checkbox" id="elevator" name="elevator" value="ascenseur">
@@ -78,9 +81,9 @@
                         <input type="checkbox" id="caretaking" name="caretaking" value="gardiennage">
                         <label for="caretaking"> gardiennage</label><br>
                         <label for="else"> autres :</label>
-                        <h3>D. Équipement d’accès aux technologies de l’information et de la communication [modalités de réception de la
-                            télévision dans l’immeuble, modalités de raccordement internet etc.] :</h3>
-                            <textarea id="stuff" name="stuff" rows="4" cols="40"></textarea>            
+                        <div class="spacebetween"><h3>D. Équipement d’accès aux technologies de l’information et de la communication [modalités de réception de la
+                            télévision dans l’immeuble, modalités de raccordement internet etc.] :</h3></div>    
+                        <textarea id="stuff" name="stuff" rows="4"></textarea>            
             </form>
 
         </div>
