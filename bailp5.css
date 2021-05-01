@@ -17,6 +17,12 @@
     margin: 10px 10px 10px ;
 }
 
+.work label {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .next-btn-wrapper {
     width: 70%;
     margin: auto;
