@@ -13,8 +13,29 @@
     border-radius: 10px;
 }
 
-.clauses-solidarity, .clauses-resolution {
+.clauses-solidarity, .clauses-resolution, .canvas-signature, .canvas-cleaning {
     margin: 10px 10px 10px ;
+}
+
+.canvas-signature, .canvas-cleaning {
+    width: fit-content;
+    margin: 1vh auto;
+}
+
+.canvas-cleaning button {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    border-radius: 10px;
+    background-color: rgb(153, 121, 226);
+    padding:5px;
+    border: none;
+}
+
+#sig-canvas {
+    border: 2px dotted #CCCCCC;
+    border-radius: 15px;
+    cursor: crosshair;
 }
 
 .next-btn-wrapper {
@@ -25,18 +46,26 @@
     font-family: sans-serif;
 }
 
-.next-btn-wrapper a {
-    width: 100px;
+.next-btn-wrapper button {
+    width: 8rem;
     display: inline-block;
     text-decoration: none;
     color: white;
     font-size: 20px;
+    border: none;
     border-radius: 10px;
     background-color: rgb(155, 110, 255);
     padding: 9px;
 }
 
-.next-btn-wrapper a:hover {
+.next-btn-wrapper button a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.next-btn-wrapper button:hover {
     background-color: rgb(94, 23, 248);
     transition: 500ms;
 }
+
