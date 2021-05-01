@@ -10,27 +10,29 @@
         <div class="duration">
             <h2>III. Date de prise d’effet et durée du contrat</h2>
             La durée du contrat et sa date de prise d’effet sont ainsi définies :
-            <h3>A. Date de prise d’effet du contrat :</h3>
+            <div class="spacebetween"><h3>A. Date de prise d’effet du contrat :</h3></div>
             <form action="">
-                    <label for="date">Date de prise d'effet du bail</label>
+                <div class="twocols-sm">
+                    <label for="date">Date de prise d'effet du bail :</label>
                     <input type="date" id="date" name="date">
-                <h3>B. Durée du contrat :</h3>
+                </div>
+                    <div class="spacebetween"><h3>B. Durée du contrat :</h3></div>
                     <input type="checkbox" id="threey" name="threey" value="3">
                     <label for="threey"> 3 ans</label><br>
                     <input type="checkbox" id="sixy" name="sixy" value="6">
                     <label for="sixy"> 6 ans [minimum si le bailleur est une personne morale]</label><br>
-                    <label for="reduced"> Durée réduite :</label>
-                    <input type="text" id="reduced" name="reduced"><br>
+                    <div class="twocols-sm"><label for="reduced"> Durée réduite :</label>
+                        <input type="text" id="reduced" name="reduced">
+                    </div>
+                    <br>
                     (durée minimale d’un an lorsqu’un événement précis le justifie)
-                <h3>C. Le cas échéant, événement et raison justifiant la durée réduite du contrat de location :</h3>
+                    <div class="spacebetween"><h3>C. Le cas échéant, événement et raison justifiant la durée réduite du contrat de location :</h3></div>
                     <label for="elseduration">En l’absence de proposition de renouvellement du contrat, celui-ci est, à son terme, reconduit tacitement pour 3 ou 6 ans
                         et dans les mêmes conditions. Le locataire peut mettre fin au bail à tout moment, après avoir donné congé. Le bailleur,
                         quant à lui, peut mettre fin au bail à son échéance et après avoir donné congé, soit pour reprendre le logement en vue de
                         l’occuper lui-même ou une personne de sa famille, soit pour le vendre, soit pour un motif sérieux et légitime.</label><br>
                     <textarea id="elseduration" name="elseduration" rows="4" cols="40"></textarea>
-
             </form>
-
         </div>
     </div>
     <div class="next-btn-wrapper">
