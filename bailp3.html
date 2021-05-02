@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bailp3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
@@ -10,35 +11,66 @@
         <div class="duration">
             <h2>III. Date de prise d’effet et durée du contrat</h2>
             La durée du contrat et sa date de prise d’effet sont ainsi définies :
-            <div class="spacebetween"><h3>A. Date de prise d’effet du contrat :</h3></div>
+            <div class="spacebetween">
+                <h3>
+                    A. Date de prise d’effet du contrat :
+                </h3>
+            </div>
             <form action="" id="formp3">
-                <div class="twocols-sm">
-                    <label for="date">Date de prise d'effet du bail :</label>
-                    <input type="date" id="date" name="date">
-                </div>
-                    <div class="spacebetween"><h3>B. Durée du contrat :</h3></div>
-                    <input type="checkbox" id="threey" name="threey" value="3">
-                    <label for="threey"> 3 ans</label><br>
-                    <input type="checkbox" id="sixy" name="sixy" value="6">
-                    <label for="sixy"> 6 ans [minimum si le bailleur est une personne morale]</label><br>
-                    <div class="twocols-sm">
-                        <label for="reduced"> Durée réduite :</label>
-                        <input type="text" id="reduced" name="reduced">
+
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="date">Date de prise d'effet du bail :</label>
+                        <input type="date" class="form-control" id="date" placeholder="Date">      
                     </div>
-                    <br>
-                    (durée minimale d’un an lorsqu’un événement précis le justifie)
-                    <div class="spacebetween"><h3>C. Le cas échéant, événement et raison justifiant la durée réduite du contrat de location :</h3></div>
-                    <label for="elseduration">En l’absence de proposition de renouvellement du contrat, celui-ci est, à son terme, reconduit tacitement pour 3 ou 6 ans
-                        et dans les mêmes conditions. Le locataire peut mettre fin au bail à tout moment, après avoir donné congé. Le bailleur,
-                        quant à lui, peut mettre fin au bail à son échéance et après avoir donné congé, soit pour reprendre le logement en vue de
-                        l’occuper lui-même ou une personne de sa famille, soit pour le vendre, soit pour un motif sérieux et légitime.</label><br>
-                    <textarea id="elseduration" name="elseduration" rows="4" cols="40"></textarea>
+                </div>
+
+                <div class="spacebetween"><h3>B. Durée du contrat :</h3></div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="constructiondate">Période de construction</label>
+                        <select id="constructiondate" class="form-control">
+                            <option value="3">3 ans</option>
+                            <option value="6">6 ans</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="dureeReduite">Durée réduite (durée minimale d’un an lorsqu’un événement précis le justifie) :</label>
+                        <input type="text" class="form-control" id="dureeReduite">      
+                    </div>
+                </div>
+                    
+                <div class="spacebetween"><h3>C. Le cas échéant, événement et raison justifiant la durée réduite du contrat de location :</h3></div>
+
+                <div class="form-group">
+                    <label for="dureeReduiteReason">Durée réduite (durée minimale d’un an lorsqu’un événement précis le justifie) :</label>
+                    <textarea class="form-control" id="dureeReduiteReason" rows="3"></textarea>
+                </div>
+                <div class="spacebetween">
+                    En l’absence de proposition de renouvellement du contrat, celui-ci est, à son terme, reconduit tacitement pour 3 ou 6 ans
+                    et dans les mêmes conditions. Le locataire peut mettre fin au bail à tout moment, après avoir donné congé. Le bailleur,
+                    quant à lui, peut mettre fin au bail à son échéance et après avoir donné congé, soit pour reprendre le logement en vue de
+                    l’occuper lui-même ou une personne de sa famille, soit pour le vendre, soit pour un motif sérieux et légitime.
+                </div>
+
             </form>
         </div>
     </div>
-    <div class="next-btn-wrapper">
-        <button><a href="bailp2.html">Précedent</a></button>
-        <button type="submit" form="formp3" value="Submit"><a href="bailp4.html">Valider</a></button>
+    <div class="spacebetween" style="width: 20%; margin: 1vh auto;">
+        <button class="btn btn-primary">
+            Précedent
+        </button>                
+        <button type="submit" class="btn btn-primary" form="formp3" value="Submit">
+            Valider
+        </button>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </body>
 </html>

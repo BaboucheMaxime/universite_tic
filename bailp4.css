@@ -22,65 +22,8 @@
     margin-bottom: 5px;
 }
 
-.twocols-sm label, .twocols-sm input, .twocols-md label, .twocols-md input {
-    display: inline-block;
-}
-
-.twocols-md label {
-    min-width: 200px;
-    width: 15%;
-}
-
-.twocols-sm label {
-    min-width: 200px;
-    width: 15%;
-}
-
 .spacebetween {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.next-btn-wrapper {
-    width: 70%;
-    margin: auto;
-    padding: 1vh 0 1vh 0;
-    text-align: center;
-    font-family: sans-serif;
-}
-
-.next-btn-wrapper button {
-    width: 8rem;
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    border: none;
-    border-radius: 10px;
-    background-color: rgb(155, 110, 255);
-    padding: 9px;
-}
-
-.next-btn-wrapper button a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
-
-.next-btn-wrapper button:hover {
-    background-color: rgb(94, 23, 248);
-    transition: 500ms;
-}
-
-@media only screen and (max-width: 400px) {
-
-    .twocols-sm label {
-        width: 50%;
-        display: inline-block;
-    }
-    .twocols-sm input {
-        width: 100px;
-        display: inline-block;
-
-    }
-}

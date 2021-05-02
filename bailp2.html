@@ -3,6 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bailp2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <title>Document</title>
 </head>
 <body>
@@ -12,86 +14,185 @@
             Le présent contrat a pour objet la location d'un logement ainsi déterminé :
             <div class="spacebetween"><h3>A. Consistance du logement</h3></div>
             
-            <form action="" id="formp2">
-                    <div class="twocols-sm">
+            <form id="formp2" action="" > 
+                <div class="form-row">
+                    <div class="form-group col-md-4">
                         <label for="street">Rue</label>
-                        <input type="text" id="street" name="street"><br>
-                        <label for="zipcode">Code postal</label>
-                        <input type="text" id="zipcode" name="zipcode"><br>
-                        <label for="city">Ville</label>
-                        <input type="text" id="city" name="city"><br>
-                        <label for="additional">Complément</label>
-                        <input type="text" id="additional" name="additional"><br>
-                        <label>Type d'habitat</label>
-                        <select name="building_type">
-                        <option value="individual"> immeuble individuel</option>
-                        <option value="collective"> immeuble collectif</option>
-                        </select><br>
-                        <label for="surface">Surface</label>
-                        <input type="text" id="surface" name="surface"><br>
-                        <label for="furnished">Meublé</label>
-                        <select name="furnished">
-                            <option value="yes"> Oui</option>
-                            <option value="no"> Non</option>
-                        </select><br>
+                        <input type="text" class="form-control" id="street">
                     </div>
-                    <div class="twocols-md">
-                        <label>Régime juridique de l'immeuble</label>
-                            <select name="settlement">
-                            <option value="mono"> monopropriété</option>
-                            <option value="joint"> copropriété</option>
-                            </select><br>
-                        <label>Période de construction</label>
-                            <select name="construction_date">
+                    <div class="form-group col-md-2">
+                        <label for="zip">Code postal</label>
+                        <input type="text" class="form-control" id="zip">
+                    </div>                    
+                    <div class="form-group col-md-4">
+                        <label for="city">Ville</label>
+                        <input type="text" class="form-control" id="city">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="additional">Complément</label>
+                        <input type="text" class="form-control" id="additional">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="buildingtype">Type d'habitat</label>
+                        <select id="buildingtype" class="form-control">
+                        <option selected>Logement individuel</option>
+                        <option>Copropriété</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="surface">Surface</label>
+                        <input type="text" class="form-control" id="surface">
+                    </div>
+                </div>                
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="isFurnished">Meublé</label>
+                        <input type="text" class="form-control" id="isFurnished">
+                    </div>
+                </div>                
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="regimejuridique">Régime juridique de l'immeuble</label>
+                        <select id="regimejuridique" class="form-control">
+                            <option selected>monopropriété</option>
+                            <option>copropriété</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="constructiondate">Période de construction</label>
+                        <select id="constructiondate" class="form-control">
                             <option value="b1949">avant 1949</option>
                             <option value="f1949t1974">de 1949 à 1974</option>
                             <option value="f1975t1989">de 1975 à 1989</option>
                             <option value="f1989t2005">de 1989 à 2005</option>
                             <option value="s2005">depuis 2005</option>
-                            </select><br>
-                        <label for="rooms">Nombre de pièces</label>
-                        <input type="number" id="rooms" name="rooms"><br>
+                        </select>
                     </div>
-                        <label for="extra">Autres parties du logement :</label><br>
-                        <textarea id="extra" name="extra" rows="4"></textarea><br>
-                        <label for="stuff">Éléments d'équipement du logement :</label><br>
-                        <textarea id="stuff" name="stuff" rows="4"></textarea><br>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="otherparts">Autres parties du logement :</label>
+                        <input type="text" class="form-control" id="otherparts">
+                    </div>
+                </div>  
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="flatstuff">Éléments d'équipement du logement :</label>
+                        <input type="text" class="form-control" id="flatstuff">
+                    </div>
+                </div>  
+                
+                <div class="spacebetween">
+                    <h3>
+                        B. Destination des locaux :
+                    </h3>
+                </div>
 
-            
-            <div class="spacebetween"><h3>B. Destination des locaux :</h3></div>
-                    <input type="checkbox" id="onlyliving" name="onlyliving" value="usage d'habitation">
-                    <label for="onlyliving"> usage d’habitation</label><br>
-                    <input type="checkbox" id="mix" name="mix" value="usage mixte professionnel et d’habitation">
-                    <label for="mix"> usage mixte professionnel et d’habitation</label><br>
-            <div class="spacebetween"><h3>C. Énumération des locaux, parties, équipements et accessoires de l’immeuble à usage
-                commun :</h3></div>
-            
-                        <input type="checkbox" id="bikesgarage" name="bikesgarage" value="garage a velo">
-                        <label for="bikesgarage"> garage à vélo</label>
-                        <input type="checkbox" id="elevator" name="elevator" value="ascenseur">
-                        <label for="elevator"> ascenseur</label>
-                        <input type="checkbox" id="greenspaces" name="greenspaces" value="espaces verts">
-                        <label for="greenspaces"> espaces verts</label><br>
-                        <input type="checkbox" id="playground" name="playground" value="aires et équipements de jeux">
-                        <label for="playground"> aires et équipements de jeux</label>
-                        <input type="checkbox" id="laundry" name="laundry" value="laverie">
-                        <label for="laundry"> laverie</label><br>
-                        <input type="checkbox" id="trasharea" name="trasharea" value="local poubelles">
-                        <label for="trasharea"> local poubelles</label>
-                        <input type="checkbox" id="caretaking" name="caretaking" value="gardiennage">
-                        <label for="caretaking"> gardiennage</label><br>
-                        <label for="else"> autres :</label>
-                        <div class="spacebetween"><h3>D. Équipement d’accès aux technologies de l’information et de la communication [modalités de réception de la
-                            télévision dans l’immeuble, modalités de raccordement internet etc.] :</h3></div>    
-                        <textarea id="stuff" name="stuff" rows="4"></textarea>            
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">usage d'habitation</label>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">usage mixte professionnel et d’habitation</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spacebetween">
+                    <h3>
+                        C. Énumération des locaux, parties, équipements et accessoires de l’immeuble à usage
+                        commun :
+                    </h3>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="bikelocal">
+                            <label class="custom-control-label" for="bikelocal">garage à vélo</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="greenspace">
+                            <label class="custom-control-label" for="greenspace">espaces verts</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="trashlocal">
+                            <label class="custom-control-label" for="trashlocal">local poubelles</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="elevator">
+                            <label class="custom-control-label" for="elevator">ascenseur</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="playground">
+                            <label class="custom-control-label" for="playground">aire et équipements de jeux</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="keeper">
+                            <label class="custom-control-label" for="keeper">gardiennage</label>
+                        </div>
+                    </div>
+                </div>                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="laundry">
+                            <label class="custom-control-label" for="laundry">laverie</label>
+                        </div>
+                    </div>
+                </div>
+
             </form>
+
+            <div class="spacebetween" style="width: 20%; margin: 1vh auto;">
+                <button class="btn btn-primary">
+                    Précedent
+                </button>                
+                <button type="submit" class="btn btn-primary" form="formp2" value="Submit">
+                    Valider
+                </button>
+            </div>
 
         </div>
     </div>
-    <div class="next-btn-wrapper">
-        <button><a href="bailp1.html">Précedent</a></button>
-        <button type="submit" form="formp2" value="Submit"><a href="bailp3.html">Valider</a></button>
 
-    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
 </body>
 </html>

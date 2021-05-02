@@ -3,6 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bailp4.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <title>Document</title>
 </head>
 <body>
@@ -15,83 +17,194 @@
                 <h3>A. Loyer</h3>
             </div>
             <form action="" id="formp4">
-                    <div class="twocols-md">
-                        <label for="bill">a) Montant du loyer mensuel :</label>
-                        <input type="text" id="bill" name="bill"><br>
-                        <label for="monthlyrent">Loyer (hors charges) :</label>
-                        <input type="text" id="monthlyrent" name="monthlyrent"><br>
-                        <label for="monthlyrent-charges">Charges récupérables :</label>
-                        <input type="text" id="monthlyrent-charges" name="monthlyrent-charges"><br>
-                    </div>
-                    <div class="spacebetween">
-                        b) Le cas échéant, modalités particulières de fixation initiale du loyer applicables dans les zones tendues
-                    </div>
-                    <div class="spacebetween"></div>
-                    <div class="spacebetween">- le loyer du logement objet du présent contrat est soumis au décret fixant annuellement le montant maximum
-                        d’évolution des loyers à la relocation :</div>
-                    <input type="checkbox" id="yes1" name="yes1" value="Oui">
-                    <label for="yes1"> Oui</label>
-                    <input type="checkbox" id="no1" name="no1" value="Non">
-                    <label for="no1"> Non</label><br>
-                    <div class="spacebetween">- le loyer du logement objet du présent contrat est soumis au loyer de référence majoré fixé par arrêté
-                        préfectoral :</div>
 
-                    <input type="checkbox" id="yes2" name="yes2" value="Oui">
-                    <label for="yes2"> Oui</label>
-                    <input type="checkbox" id="no2" name="no2" value="Non">
-                    <label for="no2"> Non</label>
-                <div class="twocols-sm">
-                    <label for="pricemsq">- loyer de référence en €/m2 :</label>
-                    <input type="text" id="pricemsq" name="pricemsq"><br>
-                    <label for="reviewdate">- date de révision :</label>
-                    <input type="date" id="reviewdate" name="reviewdate">
-                </div>
                 <div class="spacebetween">
-                c) Informations relatives au loyer du dernier locataire [montant du dernier loyer acquitté par le
-                    précédent locataire] :</div>
-                <input type="text" id="lastprice" name="lastprice">
+                    a) Loyer initial :
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="monthRent">Loyer mensuel</label>
+                        <input type="text" class="form-control" id="monthRent">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="chargelessRent">Loyer (hors charges) :</label>
+                        <input type="text" class="form-control" id="chargelessRent">
+                    </div>                    
+                    <div class="form-group col-md-2">
+                        <label for="charges">Charges récupérables :</label>
+                        <input type="text" class="form-control" id="charges">
+                    </div>
+                </div>
+
+                <div class="spacebetween">
+                    b) Le cas échéant, modalités particulières de fixation initiale du loyer applicables dans les zones tendues
+                </div>
+                <div class="spacebetween">- le loyer du logement objet du présent contrat est soumis au décret fixant annuellement le montant maximum
+                    d’évolution des loyers à la relocation :</div>
+                    
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="decretOui" value="Oui" checked>
+                    <label class="form-check-label" for="decretOui">
+                        Oui
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="decretNo" value="Non">
+                    <label class="form-check-label" for="decretNo">
+                      Non
+                    </label>
+                </div>
+
+                <div class="spacebetween">- le loyer du logement objet du présent contrat est soumis au loyer de référence majoré fixé par arrêté
+                    préfectoral :</div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadio" id="arreteOui" value="Oui" checked>
+                    <label class="form-check-label" for="arreteOui">
+                        Oui
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadio" id="arreteNon" value="Non">
+                    <label class="form-check-label" for="arreteNon">
+                        Non
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="rentSQM">- loyer de référence en €/m2 :</label>
+                        <input type="text" class="form-control" id="rentSQM">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="revisiondate">- date ou périodicité de révision :</label>
+                        <input type="text" class="form-control" id="revisiondate">
+                    </div>                    
+                </div>
+                
+                <div class="spacebetween">
+                    c) Informations relatives au loyer du dernier locataire [montant du dernier loyer acquitté par le
+                        précédent locataire] :
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <input type="text" class="form-control" id="lastrentVal" name="lastrentVal">
+                    </div>
+                </div>
+
                 <div class="spacebetween"><h3>B. Charges récupérables</h3></div>
                 <div class="spacebetween"><h3>1. Modalité de règlement des charges récupérables : </h3></div>
 
-                    <label for="provisions">Provisions sur charges avec régularisation annuelle</label><br>
-                    <input type="checkbox" id="provisions" name="provisions"><br>
-                    <label for="payment">Paiement périodique des charges sans provision</label><br>
-                    <input type="checkbox" id="payment" name="payment"><br>
-                    <label for="houseshare-charges">[En cas de colocation seulement] Forfait de charges</label><br>
-                    <input type="checkbox" id="houseshare-charges" name="houseshare-charges"><br>
-                    <div class="spacebetween">2. Le cas échéant, montant des provisions sur charges ou, en cas de colocation, du forfait de charge :</div>
-                <input type="text" id="charges-provisions" name="charges-provisions">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="provisionRadio" id="yearlyprovisions" value="provisionsAnnuelles">
+                    <label class="form-check-label" for="yearlyprovisions">
+                        Provisions sur charges avec régularisation annuelle
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="provisionRadio" id="regularPaymnt" value="paiementPériodique">
+                    <label class="form-check-label" for="regularPaymnt">
+                        Paiement périodique des charges sans provision
+                    </label>
+                </div>             
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="provisionRadio" id="houseshare-charges" value="forfaitColoc">
+                    <label class="form-check-label" for="houseshare-charges">
+                        [En cas de colocation seulement] Forfait de charges
+                    </label>
+                </div>
+
+
+                <div class="spacebetween">2. Le cas échéant, montant des provisions sur charges ou, en cas de colocation, du forfait de charge :</div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <input type="text" class="form-control" id="charges-provisions">
+                    </div>
+                </div>
+
                 <div class="spacebetween"><h3>C. Le cas échéant, en cas de colocation souscription par le bailleur d’une assurance pour le compte des
                     colocataires :</h3></div>
-                <div>
-                    <input type="checkbox" id="yes3" name="yes3" value="Oui">
-                    <label for="yes3"> Oui</label>
-                    <input type="checkbox" id="non3" name="non3" value="Non">
-                    <label for="non3"> Non</label>
-                </div>
-                <p>1. Montant total annuel récupérable au titre de l’assurance pour compte des colocataires :</p>
-                <input type="text" id="guarantee" name="guarantee">
-                <p>2. Montant récupérable par douzième :</p>
-                <input type="text" id="guaranteemonth" name="guaranteemonth">
-                <div class="spacebetween"><h3>D. Modalités de paiement :</h3></div>
-                    <label for="pay-frequency">Périodicité du paiement :</label>
-                    <input type="text" id="pay-frequency" name="pay-frequency"><br>
-                    Paiement :
-                    <input type="checkbox" id="échoir" name="échoir" value="échoir">
-                    <label for="vehicle1">à échoir</label>
-                    <input type="checkbox" id="échu" name="échu" value="échu">
-                    <label for="vehicle1">à terme échu</label><br>
-                    <label for="pay-date">Date ou période de paiement :</label>
-                    <input type="text" id="pay-date" name="pay-date"><br>
-                <label for="firstrent">Montant total dû à la première échéance de paiement pour une période complète de location :
-                </label>
-                <input type="text" id="firstrent" name="firstrent">
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadio2" id="assuranceOui" value="Oui" checked>
+                        <label class="form-check-label" for="assuranceOui">
+                            Oui
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadio2" id="assuranceNon" value="Non">
+                        <label class="form-check-label" for="assuranceNon">
+                            Non
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="guarantee">1. Montant total annuel récupérable au titre de l’assurance pour compte des colocataires :</label>
+                            <input type="text" class="form-control" id="guarantee">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="guaranteemonth">2. Montant récupérable par douzième :</label>
+                            <input type="text" class="form-control" id="guaranteemonth">
+                        </div>
+                    </div>
+
+                    <div class="spacebetween"><h3>D. Modalités de paiement :</h3></div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="pay-frequency">Périodicité du paiement :</label>
+                            <input type="text" class="form-control" id="pay-frequency">
+                        </div>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadio3" id="échoir" value="échoir">
+                        <label class="form-check-label" for="échoir">
+                            A échoir
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadio3" id="échu" value="échu">
+                        <label class="form-check-label" for="échu">
+                            A terme échu
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="pay-date">Date ou période de paiement :</label>
+                            <input type="text" class="form-control" id="pay-date">
+                        </div>
+
+                    </div>                    
+                    <div class="form-row">
+
+                        <div class="form-group col-md-2">
+                            <label for="firstrent">Montant total dû à la première échéance de paiement pour une période complète de location :</label>
+                            <input type="text" class="form-control" id="firstrent">
+                        </div>
+                    </div>
             </form>
         </div>
     </div>
-    <div class="next-btn-wrapper">
-        <button><a href="bailp3.html">Précedent</a></button>
-        <button type="submit" form="formp4" value="Submit"><a href="bailp5.html">Valider</a></button>
+    <div class="spacebetween" style="width: 20%; margin: 1vh auto;">
+        <button class="btn btn-primary">
+            Précedent
+        </button>                
+        <button type="submit" class="btn btn-primary" form="formp4" value="Submit">
+            Valider
+        </button>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </body>
 </html>

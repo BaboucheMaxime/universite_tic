@@ -17,39 +17,7 @@
     margin: 10px 10px 10px ;
 }
 
-.work label {
-    display: block;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.next-btn-wrapper {
-    width: 70%;
-    margin: auto;
-    padding: 1vh 0 1vh 0;
-    text-align: center;
-    font-family: sans-serif;
-}
-
-.next-btn-wrapper button {
-    width: 8rem;
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    border: none;
-    border-radius: 10px;
-    background-color: rgb(155, 110, 255);
-    padding: 9px;
-}
-
-.next-btn-wrapper button a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
-
-.next-btn-wrapper button:hover {
-    background-color: rgb(94, 23, 248);
-    transition: 500ms;
+.spacebetween {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

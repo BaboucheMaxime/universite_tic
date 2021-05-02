@@ -3,37 +3,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bailp5.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
     <div class="work-guarantee-wrapper">
         <form action="" id="formp5">
             <div class="work">
-                <h2>V. Travaux</h2>
-                <label for="travaux">A. Le cas échéant, Montant et nature des travaux d’amélioration ou de mise en conformité avec les
-                    caractéristiques de décence effectués depuis la fin du dernier contrat de location ou depuis le dernier
-                    renouvellement :</label>
-                <input type="text" id="travaux" name="travaux">
-                <label for="travaux-majoration">B. Majoration du loyer en cours de bail consécutive à des travaux d’amélioration entrepris par le bailleur 14
-                    [nature des travaux, modalités d’exécution, délai de réalisation ainsi que montant de la majoration du loyer] :</label>
-                <input type="text" id="travaux-majoration" name="travaux-majoration">
-                <label for="travaux-rabais">C. Le cas échéant, Diminution de loyer en cours de bail consécutive à des travaux entrepris par le locataire
-                        [durée de cette diminution et, en cas de départ anticipé du locataire, modalités de son dédommagement sur
-                        justification des dépenses effectuées] :</label>
-                <input type="text" id="travaux-rabais" name="travaux-rabais">
+                <div class="spacebetween"><h2>V. Travaux</h2></div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="travaux">A. Le cas échéant, Montant et nature des travaux d’amélioration ou de mise en conformité avec les
+                            caractéristiques de décence effectués depuis la fin du dernier contrat de location ou depuis le dernier
+                            renouvellement :</label>
+                        <input type="text" class="form-control" id="travaux">
+                    </div>
+                </div>                    
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="travaux-majoration">B. Majoration du loyer en cours de bail consécutive à des travaux d’amélioration entrepris par le bailleur 14
+                            [nature des travaux, modalités d’exécution, délai de réalisation ainsi que montant de la majoration du loyer] :</label>
+                        <input type="text" class="form-control" id="travaux-majoration">
+                    </div>
+                </div>
             </div>
             <div class="guarantee">
-                <h2>VI. Garanties</h2>
-                <p>Montant du dépôt de garantie de l’exécution des obligations du locataire / Garantie autonome
-                    [inférieur ou égal à un mois de loyers hors charges] :
-                    </p>
-                <input type="text" id="bill" name="bill">
+                <div class="spacebetween"><h2>VI. Garanties</h2></div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="guaranteeAmount">Montant du dépôt de garantie de l’exécution des obligations du locataire / Garantie autonome
+                            [inférieur ou égal à un mois de loyers hors charges] :</label>
+                        <input type="text" class="form-control" id="guaranteeAmount">
+                    </div>
+                </div>
             </div>
+
         </form>
     </div>
-    <div class="next-btn-wrapper">
-        <button><a href="bailp4.html">Précedent</a></button>
-        <button type="submit" form="formp5" value="Submit"><a href="bailp6.html">Valider</a></button>
+    <div class="spacebetween" style="width: 20%; margin: 1vh auto;">
+        <button class="btn btn-primary">
+            Précedent
+        </button>                
+        <button type="submit" class="btn btn-primary" form="formp5" value="Submit">
+            Valider
+        </button>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </body>
 </html>

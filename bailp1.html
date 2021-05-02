@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bailp1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Bail</title>
 </head>
 <body>
@@ -11,74 +12,121 @@
         <p>(Soumis au titre Ier de la loi du 6 juillet 1989 tendant à améliorer les rapports locatifs et portant modification
             de la loi n° 86-1290 du 23 décembre 1986)</p>
     </div>
+
     <div class="signatories-wrapper">
         <div class="signatories">
-            <div class="spacebetween">
-            <h2>I. DESIGNATION DES PARTIES</h2><br>
-            Le présent contrat est conclu entre les soussignés :
-            </div>
-                <form action="" id="formp1">
-                    <label for="title">M. ou Mme.</label>
-                    <select name="title">
-                        <option value="M."> M.</option>
-                        <option value="Mme."> Mme.</option>
-                    </select>
-                    <br>
-                    <label for="lessor-lname">Nom</label>
-                    <input type="text" id="lessor-lname" name="lessor-lname">
-                    <br>
-                    <label for="lessor-fname">Prénom</label>
-                    <input type="text" id="lessor-fname" name="lessor-fname">
-                    <br>
-                    <label for="lessor-bdate">Né(e) le</label>
-                    <input type="date" id="lessor-bdate" name="lessor-bdate">
-                    <br>
-                    <label for="lessor-bcity">à</label>
-                    <input type="text" id="lessor-bcity" name="lessor-bcity">
-                    <br>
-                    <label for="lessor-street">Demeurant</label>
-                    <input type="text" id="lessor-street" name="lessor-street">
-                    <br>
-                    <label for="lessor-zipcode">Code postal</label>
-                    <input type="text" id="lessor-zipcode" name="lessor-zipcode">
-                    <br>
-                    <label for="lessor-city">Ville</label>
-                    <input type="text" id="lessor-city" name="lessor-city">
+                <div class="spacebetween">
+                    <h2>I. DESIGNATION DES PARTIES</h2>
+                    Le présent contrat est conclu entre les soussignés :
+                </div>    
+                <form id="formp1" action="" > 
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="lessor-title">Titre</label>
+                            <select id="lessor-title" class="form-control">
+                            <option selected>Monsieur</option>
+                            <option>Madame</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="lessor-lname">Nom</label>
+                        <input type="text" class="form-control" id="lessor-lname">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="lessor-fname">Prénom</label>
+                        <input type="text" class="form-control" id="lessor-fname">
+                    </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="lessor-bdate">Né le</label>
+                            <input type="date" class="form-control" id="lessor-bdate" placeholder="Date">      
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="lessor-bcity">à</label>
+                            <input type="text" class="form-control" id="lessor-bcity" placeholder="Ville">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">Demeurant</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputState">Code postal</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputZip">Ville</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    </div>
+
                     <div class="spacebetween">CI-APRÈS DÉNOMMÉ LE BAILLEUR d'une part,</div>
-                    <label for=""> M. ou Mme.</label>
-                        <select name="title">
-                        <option value="Mr."> M.</option>
-                        <option value="Mrs."> Mme.</option>
-                        </select>
-                        <br>
-                    <label for="tenant-lname">Nom</label>
-                    <input type="text" id="tenant-lname" name="tenant-lname">
-                    <br>
-                    <label for="tenant-fname">Prénom</label>
-                    <input type="text" id="tenant-fname" name="tenant-fname">
-                    <br>
-                    <label for="tenant-bdate">Né(e) le</label>
-                    <input type="date" id="tenant-bdate" name="tenant-bdate">
-                    <br>
-                    <label for="tenant-bcity">à</label>
-                    <input type="text" id="tenant-bcity" name="tenant-bcity">
-                    <br>
-                    <label for="tenant-street">Demeurant</label>
-                    <input type="text" id="tenant-street" name="tenant-street">
-                    <br>
-                    <label for="tenant-zipcode">Code postal</label>
-                    <input type="text" id="tenant-zipcode" name="tenant-zipcode">
-                    <br>
-                    <label for="tenant-city">Ville</label>
-                    <input type="text" id="tenant-city" name="tenant-city">
-                    <br>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="tenant-title">Titre</label>
+                            <select id="tenant-title" class="form-control">
+                            <option selected>Monsieur</option>
+                            <option>Madame</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="tenant-lname">Nom</label>
+                        <input type="text" class="form-control" id="tenant-lname">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="tenant-fname">Prénom</label>
+                        <input type="text" class="form-control" id="tenant-fname">
+                    </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="tenant-bdate">Né le</label>
+                            <input type="date" class="form-control" id="tenant-bdate" placeholder="Date">      
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="tenant-bcity">à</label>
+                            <input type="text" class="form-control" id="tenant-bcity" placeholder="Ville">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="tenant-street">Demeurant</label>
+                            <input type="text" class="form-control" id="tenant-street">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="tenant-zip">Code postal</label>
+                            <input type="text" class="form-control" id="tenant-zip">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="tenant-city">Ville</label>
+                            <input type="text" class="form-control" id="tenant-city">
+                        </div>
+                    </div>
+                    <div class="spacebetween">CI-APRÈS DÉNOMMÉ LE LOCATAIRE d'autre part,</div>
+                    Il a été convenu ce qui suit,
+                    </div>
                 </form>
-                <div class="spacebetween">CI-APRÈS DÉNOMMÉ LE LOCATAIRE d'autre part,</div>
-            Il a été convenu ce qui suit,
+
+                <div class="spacebetween" style="width: 20%; margin: 1vh auto;">
+                    <button type="submit" class="btn btn-primary" form="formp1" value="Submit">
+                        Valider
+                    </button>
+                </div>
         </div>
     </div>
-    <div class="next-btn-wrapper">
-        <button type="submit" form="formp1" value="Submit"><a href="bailp2.html">Valider</a></button>
-    </div>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
