@@ -7,7 +7,7 @@
 
     <title>Menu</title>
 </head>
-<body class="fond" >
+<body>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff; border-bottom: 1px solid black;">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@
                     <a class="nav-link" href="#">Consulter les biens</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Éditer un bail</a>
+                    <a class="nav-link" href="bailp1.html">Éditer un bail</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Éditer un état des lieux</a>
@@ -32,23 +32,24 @@
             </div>
         </nav>
 
-        <form>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <div class="login-wrapper">
+            <div class="form-row">
+                <div class="form-group col-md-2">
+                    <form>
+                        <div class="form-group" id="login-innerdiv">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group" id="login-innerdiv">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" id="login-innerdiv">Submit</button>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-          
+        </div>
         <footer class="text-center text-white fixed-bottom" style="background-color: #21081a;">
             <!-- Grid container -->
             <div class="container p-4"></div>
